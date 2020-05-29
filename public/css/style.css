@@ -104,11 +104,6 @@ nav.primary div a:hover {
   text-decoration: underline;
 }
 
-div.player audio {
-  width: 380px;
-  height: 36px;
-}
-
 /* Cards Blog */
 div.card {
   background-color: var(--color-05--);
