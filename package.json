@@ -2,6 +2,9 @@
   "name": "polacodev",
   "version": "1.0.0",
   "main": "index.js",
+  "engines": {
+    "node": "^12"
+  },
   "dependencies": {
     "express": "^4.17.1",
     "method-override": "^3.0.0",
@@ -15,7 +18,7 @@
     "start": "nodemon server.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "author": "Ricardo Wojciechowski",
+  "license": "MIT",
+  "description": "Personal site"
 }
