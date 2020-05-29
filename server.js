@@ -14,7 +14,9 @@ nunjucks.configure("src/app/views", {
   noCache: true
 })
 
-server.listen(3333, (error) => {
+const port = process.env.PORT || 3333
+
+server.listen(port, (error) => {
   if(error) {
     throw error
   }
