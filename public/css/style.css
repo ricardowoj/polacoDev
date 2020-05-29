@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+:root {
+  --color-01--: #1F2324;
+  --color-02--: #A9C4C4;
+  --color-03--: #859EBD;
+  --color-04--: #FF2F2F;
+  --color-05--: #FFFFFF;
+  --color-06--: #990003;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: var(--color-05--);
+
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header, footer {
+  background-color: #213047;
+  color: var(--color-04--);
+  width: 100%;
+  padding: 32px 0;
+  text-align: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+header div.container {
+  display: grid;
+  grid-template-columns: 280px auto 280px;
+  align-items: center;
+  grid-gap: 24px;
+}
+
+header div.container a {
+  justify-self: start;
+}
+
+/* footer */
+footer {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Logo PolacoDev */
+.logo h1 {
+  color: var(--color-04--);
+  font-size: 32px;
+  line-height: 36px;
+}
+
+.logo h2 {
+  color: var(--color-04--);
+  font-family: "Marck Script";
+  font-style: italic;
+  font-size: 20px;
+}
+
+/* primary menu */
+nav.primary div {
+  width: 100%;
+  display: flex;
+  align-content: space-between;
+  font-size: 18px;
+}
+
+nav.primary div a {
+  display: flex;
+  align-items: center;
+  color: var(--color-04--);
+  margin-right: 16px;
+
+  transition: 300ms;
+}
+
+nav.primary div a:hover {
+  color: var(--color-01--);
+  text-decoration: underline;
+}
+
+div.player audio {
+  width: 380px;
+  height: 36px;
+}
+
+/* Cards Blog */
+div.card {
+  background-color: var(--color-05--);
+  padding: 32px 24px;
+  margin: 16px 32px;
+
+  box-shadow: 2px 2px 2px 1px rgba(60, 60, 60, .9);
+  border: 1px solid var(--color-04--);
+
+  border-radius: 4px;
+
+  transition: 300ms;
+}
+
+div.card:hover {
+  box-shadow: 2px 2px 2px 4px black;
+  border-radius: 32px;
+}
+
+div.card-title h1 {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: .4px;
+  margin-bottom: 0px;
+  color: black;
+  font-weight: bold;
+}
+
+div.card-title h2 {
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: .4px;
+  margin-bottom: 4px;
+  color: black;
+  font-weight: bold;
+}
+
+div.card-info p {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: .4px;
+  margin-bottom: 4px;
+  color: var(--color-06--);
+}
+
+/* Cards Portfolio */
+.wrapper-portfolio {
+  max-width: 1024px;
+  margin: 8px auto auto;
+  padding: 8px 8px;
+  display: grid;
+  grid-template-columns: 840px;
+  grid-gap: 10px;
+  background-color: var(--color-06--);
+  color: black;
+
+  box-shadow: 2px 2px 6px 3px var(--color-01--);
+  border-radius: 4px;
+}
+
+.item {
+  background-color: var(--color-05--);
+  border-radius: 4px;
+  padding: 20px;
+  font-size: 18px;
+
+  box-shadow: 0 8px 6px -6px var(--color-01--);
+  transition: 300ms;
+}
+
+div.item:hover {
+  box-shadow: 0 2px 2px 3px var(--color-01--);
+  background-color: #e6e6e6;
+}
+
+.item h1 {
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: .4px;
+  margin-bottom: 4px;
+  color: var(--color-01--);
+  font-weight: bold;
+}
+
+.item p {
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: .4px;
+  margin-bottom: 4px;
+  color: var(--color-06--);
+}
+
+.item a {
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: .4px;
+  margin-bottom: 4px;
+}
