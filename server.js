@@ -5,18 +5,21 @@ const routes = require('./routes')
 
 const path = require('path')
 
-server.use(express.static(path.join(__dirname, 'public')))
-server.use(routes)
+server.set('views', path.join(__dirname, 'views'))
 server.set("view engine", "njk")
-server.set('views', path.join(__dirname, 'src/app/views'))
+server.use(express.static(path.join(__dirname, 'public')))
+server.use(bodyParser.urlencoded({ extended: true }))
+server.use(routes)
 
-nunjucks.configure("src/app/views", {
+nunjucks.configure("views", {
   express: server,
   autoescape: false,
   noCache: true
 })
 
 const port = process.env.PORT || 3334
+
+init()
 
 server.listen(port, (error) => {
   if(error) {
